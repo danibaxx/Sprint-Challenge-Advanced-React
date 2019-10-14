@@ -34,8 +34,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1>Women's World Cup Players!</h1>
-        <Players players={this.state.players}/>
-        {/* <PlayerCard /> */}
+        <Players players={this.state.players} />
       </div>
     );
   };
