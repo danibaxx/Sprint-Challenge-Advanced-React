@@ -1,7 +1,8 @@
 import React from 'react';
 
 const PlayerCard = (props) => {
-  // console.log('PlayerCard', props)
+  
+  console.log('PlayerCard', props)
   const { name, country, searches } = props.players;
   return(
     <div className='player-card'>

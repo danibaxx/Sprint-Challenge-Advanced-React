@@ -4,6 +4,7 @@ import axios from 'axios';
 import Players from './Players/Players';
 
 import './App.css';
+// import PlayerCard from './Players/PlayerCard';
 
 // build class component with axios call to API http://localhost:5000/api/players
 export default class App extends Component {
@@ -33,7 +34,8 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1>Women's World Cup Players!</h1>
-        <Players />
+        <Players players={this.state.players}/>
+        {/* <PlayerCard /> */}
       </div>
     );
   };
