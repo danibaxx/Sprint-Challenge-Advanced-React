@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import NavBar from './NavBar';
 import Players from './Players/Players';
 
 import './App.css';
-// import PlayerCard from './Players/PlayerCard';
 
 // build class component with axios call to API http://localhost:5000/api/players
 export default class App extends Component {
@@ -33,7 +33,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Women's World Cup Players!</h1>
+        <NavBar />
         <Players players={this.state.players} />
       </div>
     );
