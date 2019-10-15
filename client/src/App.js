@@ -23,7 +23,7 @@ export default class App extends Component {
         this.setState({
           players: response.data
         })
-        console.log('after state', this.state.players)
+        // console.log('after state', this.state.players)
       })
       .catch(error => {
         console.log('Error', error)
