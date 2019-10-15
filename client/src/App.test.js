@@ -18,5 +18,11 @@ afterEach(rtl.cleanup);
 test('Renders the app', () => {
     const wrapper = rtl.render(<App />)
     wrapper.debug()
-})
+});
+
+test('Render the heading', () => {
+    const wrapper = rtl.render(<App />);
+    const element = wrapper.getByText(/women's world cup players/i);
+    expect(element).toBeVisible();
+});
 
